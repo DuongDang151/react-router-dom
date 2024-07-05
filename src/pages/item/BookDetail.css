@@ -33,7 +33,13 @@
 .book-info {
   flex: 2;
   padding: 20px;
-  color: #3333;
+  color: #000000;
+}
+
+.book-information{
+  font-size: 13px;
+  line-height: 20px;
+  text-align: right;
 }
 
 .book-name {
@@ -45,8 +51,8 @@
 
 .book-price {
   color: #e65c0c;
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 2.5em;
+  font-weight: 450;
   margin: 10px 0;
 }
 

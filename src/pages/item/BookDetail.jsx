@@ -29,12 +29,16 @@ function BookDetail() {
         </div>
         <div className="book-info">
           <h1 className="book-name">{book.name}</h1>
-          <h4>Nhà xuất bản: {book.publisher}</h4>
-          <h4>Tác giả: {book.author}</h4>
-          <h4>Loại sách: {book.category}</h4>
+          <div className="book-information">
+            Nhà xuất bản: {book.productDetail.publisher}
+          </div>
+          <div className="book-information">
+            Tác giả: {book.productDetail.author}
+          </div>
+          <div className="book-information">Loại sách: {book.category}</div>
           <h2 className="book-price">{book.currentPrice}đ</h2>
           <div className="book-actions">
-            <Button type="primary" className="add-to-cart-btn">
+            <Button type="danger" className="add-to-cart-btn">
               Thêm vào giỏ hàng
             </Button>
             <Button type="danger" className="buy-now-btn">
